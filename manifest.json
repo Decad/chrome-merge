@@ -1,0 +1,24 @@
+{
+  "name": "Chrome Merge",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Merge all chrome windows back into one window",
+  "homepage_url": "https://github.com/decad/chrome-merge",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "options_page": "src/options/index.html",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Merge Tabs"
+  },
+  "background":{
+      "scripts":["js/background.js"]
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
